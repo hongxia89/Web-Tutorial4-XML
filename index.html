@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookstore</title>
+</head>
+<body>
+<h1>Bookstore</h1>
+<div id="bookList"></div>
+
+<script>
+    async function myFunction(){
+        const response = await fetch('book.xml');
+        const xmlText = await response.text();
+
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText,'text/xml');
+
+        const books = xmlDoc.getElementsByTagName("book");
+        const output = document.getElementById("bookList");
+
+        for (let i = 0; i < books.length; i++) {
+            const title = books[i].getElementsByTagName("title")[0].textContent;
+            const author = books[i].getElementsByTagName("author")[0].textContent;
+            const price = books[i].getElementsByTagName("price")[0].textContent;
+
+            output.innerHTML += `
+                  <p>
+                    <strong>title：</strong>${title}<br>
+                    <strong>author：</strong>${author}<br>
+                    <strong>price：</strong>$${price}
+                  </p>
+            `;
+
+        }
+    }
+    myFunction();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book id="1">
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <price>10.99</price>
+    </book>
+
+    <book id="2">
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <price>8.99</price>
+    </book>
+
+    <book id="3">
+        <title>1984</title>
+        <author>George Orwell</author>
+        <price>9.50</price>
+    </book>
+
+    <book id="4">
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <price>7.99</price>
+    </book>
+
+    <book id="5">
+        <title>The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <price>9.20</price>
+    </book>
+
+    <book id="6">
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <price>12.50</price>
+    </book>
+
+    <book id="7">
+        <title>Fahrenheit 451</title>
+        <author>Ray Bradbury</author>
+        <price>8.75</price>
+    </book>
+
+    <book id="8">
+        <title>Jane Eyre</title>
+        <author>Charlotte Brontë</author>
+        <price>7.50</price>
+    </book>
+
+    <book id="9">
+        <title>Brave New World</title>
+        <author>Aldous Huxley</author>
+        <price>9.00</price>
+    </book>
+
+    <book id="10">
+        <title>Moby Dick</title>
+        <author>Herman Melville</author>
+        <price>11.00</price>
+    </book>
+</bookstore>
